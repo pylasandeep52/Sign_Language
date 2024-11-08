@@ -46,7 +46,7 @@ The Random Forest Classifier, chosen for its robust handling of decision trees, 
 - **Data Preparation**:
   - Landmarks and labels are processed into training and testing datasets to ensure high recognition accuracy. Each unique ASL and ISL gesture is captured as a distinct landmark pattern.
 - **Training**:
-  - The Random Forest Classifier achieves over 99% accuracy on validation data. Training is managedfor 'Indian Sign Language' and 'American Sign Language' by trainI.py and `train_classifierA.py` respectively, which outputs a ISL_model.p and `ASL_model.p` model files loaded for real-time prediction.
+  - The Random Forest Classifier achieves over 99% accuracy on validation data. Training is managedfor 'Indian Sign Language' and 'American Sign Language' by trainI.py and `train_classifierA.py` respectively, which outputs a 'ISL_model.p' and `ASL_model.p` model files loaded for real-time prediction.
 - **Real-Time Prediction**:
   - `applicationI.py` and applicationA.py files handles real-time prediction respectively, loading the trained model and interpreting hand landmarks into text characters.
 
