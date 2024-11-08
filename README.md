@@ -1,6 +1,8 @@
 
 # Real-Time Sign Language Translator [American Sign Language(ASL)  & Indian Sign Language(ISL) ]
 
+# If you need files insted of Zip file , please go to master branch
+
 ## Overview
 This project leverages computer vision and AI to translate sign language gestures from American Sign Language (ASL) and Indian Sign Language (ISL) alphabets into text, supporting smoother communication for the deaf and hard-of-hearing community. Through real-time gesture recognition, this system accurately identifies hand shapes and movements, facilitating interaction in diverse settings.
 
