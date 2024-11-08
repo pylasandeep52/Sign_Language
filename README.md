@@ -28,7 +28,7 @@ Mediapipe is used for hand landmark detection. By extracting the x and y coordin
 CustomTkinter provides a sleek, dark-themed user interface. The application interface displays real-time webcam feeds and recognized gestures, with options to adjust the speed of recognition using a delay setting.
 
 ## Dataset
-Data for ASL and ISL alphabets were collected, with 1,000 images per letter. Certain letters, such as "J" and "Z" in ASL, require specific adaptations to account for motion. A `collect_imagesI.py` & 'collect_imagesA.py  modules automates data collection respectively, capturing labeled images of each hand gesture. Landmark extraction is performed by `create_datasetI.py` and 'create_datasetA.py respectively, standardizing coordinates for model training.
+Data for ASL and ISL alphabets were collected, with 1,000 images per letter. Certain letters, such as "J" and "Z" in ASL, require specific adaptations to account for motion. A `collect_imagesI.py` & 'collect_imagesA.py'  modules automates data collection respectively, capturing labeled images of each hand gesture. Landmark extraction is performed by `create_datasetI.py` and 'create_datasetA.py respectively, standardizing coordinates for model training.
 
 The project also includes custom gestures for:
 - **Backspace**: Deletes the last character
@@ -48,7 +48,7 @@ The Random Forest Classifier, chosen for its robust handling of decision trees, 
 - **Training**:
   - The Random Forest Classifier achieves over 99% accuracy on validation data. Training is managedfor 'Indian Sign Language' and 'American Sign Language' by trainI.py and `train_classifierA.py` respectively, which outputs a ISL_model.p and `ASL_model.p` model files loaded for real-time prediction.
 - **Real-Time Prediction**:
-  - `application.py` handles real-time prediction, loading the trained model and interpreting hand landmarks into text characters.
+  - `applicationI.py` and applicationA.py files handles real-time prediction respectively, loading the trained model and interpreting hand landmarks into text characters.
 
 ## Real-Time Detection
 
