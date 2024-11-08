@@ -6,14 +6,6 @@ This project leverages computer vision and AI to translate sign language gesture
 
 The system captures ASL and ISL gestures via a webcam, using hand landmark detection to classify gestures through a trained machine learning model. The model recognizes the alphabet (A-Z), along with unique gestures for backspace, space, and clear text. It includes special adjustments for gestures requiring movement, like "J" and "Z" in ASL, enhancing accuracy and usability.
 
-<p align="center">
-  <b>Sign Language Alphabet (A-Z)</b>
-</p>
-
-<p align="center">
-  <img src="" alt="Sign Language Alphabet">
-</p>
-
 <p align="center">––––––––––––––––––––––––––––––––––––––––––––</p>
 
 ## Requirements
@@ -36,7 +28,7 @@ Mediapipe is used for hand landmark detection. By extracting the x and y coordin
 CustomTkinter provides a sleek, dark-themed user interface. The application interface displays real-time webcam feeds and recognized gestures, with options to adjust the speed of recognition using a delay setting.
 
 ## Dataset
-Data for ASL and ISL alphabets were collected, with 1,000 images per letter. Certain letters, such as "J" and "Z" in ASL, require specific adaptations to account for motion. A `collect_images.py` module automates data collection, capturing labeled images of each hand gesture. Landmark extraction is performed by `create_dataset.py`, standardizing coordinates for model training.
+Data for ASL and ISL alphabets were collected, with 1,000 images per letter. Certain letters, such as "J" and "Z" in ASL, require specific adaptations to account for motion. A `collect_imagesI.py` & 'collect_imagesA.py  modules automates data collection respectively, capturing labeled images of each hand gesture. Landmark extraction is performed by `create_datasetI.py` and 'create_datasetA.py respectively, standardizing coordinates for model training.
 
 The project also includes custom gestures for:
 - **Backspace**: Deletes the last character
