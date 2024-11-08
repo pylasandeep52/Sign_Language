@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    
+    <!-- Internal CSS for styling -->
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .button-container {
+            text-align: center;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 20px;
+            font-size: 20px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="button" id="aslButton">American Sign Language</button>
+        <button class="button" id="islButton">Indian Sign Language</button>
+    </div>
+    
+    <!-- Internal JavaScript for button functionality -->
+    <script>
+        document.getElementById('aslButton').onclick = function() {
+            window.location.href = "{{ url_for('asl') }}";
+        };
+        
+        document.getElementById('islButton').onclick = function() {
+            window.location.href = "{{ url_for('isl') }}";
+        };
+    </script>
+</body>
+</html>

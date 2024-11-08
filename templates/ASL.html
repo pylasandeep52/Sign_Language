@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Sign Language</title>
+
+    <!-- Internal CSS for styling -->
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #e0f7fa;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .instructions {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .start-button {
+            padding: 15px 30px;
+            font-size: 20px;
+            color: #fff;
+            background-color: #0288d1;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .start-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+            background-color: #01579b;
+        }
+
+        .message {
+            font-size: 16px;
+            color: #0288d1;
+            margin-top: 15px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to American Sign Language Translation</h1>
+        
+        <div class="instructions">
+            <p>1. Please ensure your webcam is properly connected and functional before proceeding.</p>
+            <p>2. The application will utilize your webcam feed to deliver real-time predictions.</p>
+            <p>3. Press "Let's Start" to begin.</p>
+            <p>Enjoy using the app!</p>
+        </div>
+        
+        <button class="start-button" id="startAsl">Let's Start</button>
+        
+        <div class="message" id="messageAsl">Application has started</div>
+    </div>
+    
+    <!-- Internal JavaScript for button functionality -->
+    <script>
+        document.getElementById('startAsl').onclick = function() {
+            // Trigger the route to start applicationA.py
+            window.location.href = "{{ url_for('start_asl') }}";
+            
+            // Display the "Application has started" message
+            document.getElementById('messageAsl').style.display = 'block';
+        };
+    </script>
+</body>
+</html>
