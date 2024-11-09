@@ -4,7 +4,7 @@
 ## Overview
 This project leverages computer vision and AI to translate sign language gestures from American Sign Language (ASL) and Indian Sign Language (ISL) alphabets into text, supporting smoother communication for the deaf and hard-of-hearing community. Through real-time gesture recognition, this system accurately identifies hand shapes and movements, facilitating interaction in diverse settings.
 
-The system captures ASL and ISL gestures via a webcam, using hand landmark detection to classify gestures through a trained machine learning model. The model recognizes the alphabet (A-Z), along with unique gestures for backspace, space, and clear text. It includes special adjustments for gestures requiring movement, like "J" and "Z" in ASL, enhancing accuracy and usability.
+The system captures ASL and ISL gestures via a webcam, using hand landmark detection to classify gestures through a trained machine learning model. The model recognizes the alphabet (A-Z), along with unique gestures for backspace, space, and clear text. 
 
 <p align="center">––––––––––––––––––––––––––––––––––––––––––––</p>
 
