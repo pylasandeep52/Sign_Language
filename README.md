@@ -15,6 +15,7 @@ Install the necessary dependencies:
 - **OpenCV (cv2)**: `4.10.0`
 - **Scikit-learn**: `1.5.2`
 - **customtkinter**: 5.2.1
+- **Flask**
 
 Install them with the following command:
 
